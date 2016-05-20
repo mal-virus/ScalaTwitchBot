@@ -1,0 +1,15 @@
+# This is the main configuration file for the application.
+# ~~~~~
+
+# Database configuration
+# You can change this to whatever
+# just make sure you add the driver to your dependencies
+db.default.driver=org.sqlite.JDBC
+db.default.url="jdbc:sqlite:src/main/resources/twitchbot.sqlite"
+
+### Our custom Twitch properties ###
+### Get your OAuth from https://twitchapps.com/tmi/ using your bots credentials ###
+twitch.admin="yourUsername"
+twitch.login="yourBotsName"
+twitch.oauth="oauth:someoauth"
+twitch.users="list,of,comma,seperated,users"
